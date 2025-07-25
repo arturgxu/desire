@@ -7,25 +7,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <button class="change_language">Армянский язык</button>
-    </header>
-    <main>
-      <div class="description">
-        <p>
-          Дорогие гости, на этой странице вы можете оставить пожелание
-          молодоженам. Эти пожелания
-        </p>
-        <p>
-          будут выведены и озвучены на презентации в свадебном зале. Ниже вы
-          увдитете форму,
-        </p>
-        <p>
-          которой нужно указать имя и фамилию гостя, после чего написать ваше
-          пожелание
-        </p>
-        <p>в отдельном поле. Заранее благодарим за теплые слова!</p>
-      </div>
-    </main>
+    <div class="wrapper">
+      <header>
+        <button class="change_language">Армянский язык</button>
+      </header>
+      <main>
+        <div class="description">
+          <p>
+            Дорогие гости, на этой странице вы можете оставить пожелание
+            молодоженам. Эти пожелания
+          </p>
+          <p>
+            будут выведены и озвучены на презентации в свадебном зале. Ниже вы
+            увдитете форму,
+          </p>
+          <p>
+            которой нужно указать имя и фамилию гостя, после чего написать ваше
+            пожелание
+          </p>
+          <p>в отдельном поле. Заранее благодарим за теплые слова!</p>
+          
+        </div>
+        <form action="">
+          <div clas="name_container">
+            <label for="name">Введите, пожалуйста, ваше имя и фамилию</label>
+            <input type="text" name="name" id="name"></input>
+          </div>
+          <div class="desire_container">
+            <label for="desire">Введите, пожалуйста, ваше пожелание молодоженам</label>
+            <textarea id="desire" rows="" placeholder=""></textarea>
+          </div>  
+        </form>
+      </main>
+    </div>
   </body>
 </html>
