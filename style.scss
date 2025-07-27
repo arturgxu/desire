@@ -17,21 +17,75 @@ body, html {
 header {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid darkgray;
+
+    span {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
     
+    .change_language {
+        background-color: rgb(245, 245, 245);
+        border: 1px solid darkgray;
+        border-radius: 12px;
+        padding: 8px;
+        transition: background-color 0.15s ease;
+        &:hover {
+            background-color: rgb(235, 235, 235);
+        }
+    }
+
 }
 
 main {
-    height: 100%;
+    height: 70%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 70px;
 }
 
-.description {
+.form-container {
     width: 100%;
-    margin: 0 auto;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+
+    .description {
+        font-size: 22px;
+        max-width: 500px;
+        text-indent: 2em;
+    }
+
+    form {
+        border: 1px solid darkgray;
+        padding: 60px;
+        border-radius: 10px;
+        @mixin form_mixin(){
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+        
+        .name_container {
+            @include form_mixin();
+            margin-bottom: 30px;
+        }
+
+        .desire_container {
+            @include form_mixin();
+
+            textarea {
+                resize: vertical;
+                overflow: auto;
+                max-height: 400px;
+            }
+        }
+    }
 }

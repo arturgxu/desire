@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ваши пожелания</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <button class="change_language">Армянский язык</button>
-      </header>
-      <main>
-        <div class="description">
-          <p>
-            Дорогие гости, на этой странице вы можете оставить пожелание
-            молодоженам. Эти пожелания
-          </p>
-          <p>
-            будут выведены и озвучены на презентации в свадебном зале. Ниже вы
-            увдитете форму,
-          </p>
-          <p>
-            которой нужно указать имя и фамилию гостя, после чего написать ваше
-            пожелание
-          </p>
-          <p>в отдельном поле. Заранее благодарим за теплые слова!</p>
-          
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Опиши твои чувства</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <span>Опиши твои чувства</span>
+      <button class="change_language">Армянский язык</button>
+    </header>
+    <main>
+      <div class="form-container">
+        <span class="description">
+         Привет, спасибо, что проводишь этот день с нами! На этой странице вы можете описать, что чувствуете в эту особенную минуту. Это сообщение увидим только мы. Ниже ты увидишь форму, в которой нужно указать твои имя и фамилию, после чего написать описать твои чувства в отдельном поле. Заранее благодарим за теплые слова! 
+        </span>
         <form action="">
-          <div clas="name_container">
-            <label for="name">Введите, пожалуйста, ваше имя и фамилию</label>
+          <div class="name_container">
+            <label for="name">Введи, пожалуйста, твои имя и фамилию</label>
             <input type="text" name="name" id="name"></input>
           </div>
           <div class="desire_container">
-            <label for="desire">Введите, пожалуйста, ваше пожелание молодоженам</label>
-            <textarea id="desire" rows="" placeholder=""></textarea>
-          </div>  
+            <label for="desire">Опиши твои чувства в эту минуту</label>
+            <textarea id="desire" rows="5" placeholder=""></textarea>
+          </div>
         </form>
-      </main>
-    </div>
-  </body>
+      </div>
+      <div class="image-container"></div>
+    </main>
+    <footer></footer>
+  </div>
+</body>
+
 </html>
