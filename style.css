@@ -20,7 +20,7 @@ body {
 }
 
 button {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(250, 215, 155);
   box-shadow: 0px 0px 2px 1px #bebdbd;
   border: none;
   border-radius: 12px;
@@ -79,7 +79,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(244, 244, 244, 0.65);
+  background-color: rgba(255, 248, 232, 0.5);
   padding: 16px;
   box-shadow: 0px 0px 6px 0px #bebdbd;
   border-radius: 12px;
@@ -123,11 +123,10 @@ main {
 .form-container .form_submit {
   margin: 0 0 0 auto;
 }
-.form-container .form_submit button {
-  background-color: rgb(250, 215, 155);
-}
 
 img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0px 0px 10px 0px #bebdbd;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
