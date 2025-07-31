@@ -5,16 +5,24 @@
 }
 
 html, body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 input, textarea {
     font: inherit;
 }
 
+body {
+    background-color: rgb(253, 251, 247); 
+    min-height: 100vh;              
+}
+
 button {
     background-color: rgb(245, 245, 245);
-    border: 1px solid darkgray;
+    box-shadow: 0px 0px 2px 1px #bebdbd;
+    border: none;
     border-radius: 12px;
     padding: 12px;
     font-size: 16px;
@@ -22,6 +30,7 @@ button {
     &:hover {
         background-color: rgb(235, 235, 235);
     }
+
 }
 
 header {
@@ -44,7 +53,7 @@ header {
 }
 
 .header_left {
-    span:first-child {
+    span{
         text-transform: uppercase;
         font-weight: bold;
         transform: skew(-20deg, 0deg);
@@ -54,10 +63,10 @@ header {
 }
 
 main {
-    padding: 18px;
     max-width: 800px;
+    padding: 18px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
 .form-container {
@@ -91,6 +100,11 @@ main {
         padding: 60px;
         border-radius: 10px;
         width: 100%;
+        background-image: url("./images/background.webp");
+        background-repeat: no-repeat;
+        background-size: cover;     
+        background-position: center;
+          
         
         .name_container, .desire_container {
             display: flex;
@@ -121,7 +135,12 @@ main {
 
         &_submit {
             margin: 0 0 0 auto;
+            button {
+                background-color: rgb(250, 215, 155, 1)
+                ;
+            }
         }
+
     }
 }
 
