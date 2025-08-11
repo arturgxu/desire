@@ -1,2 +1,3 @@
 .history/
-style.css.map/
+./frontend/src/styles/style.css.map/
+./frontend/node_modules
