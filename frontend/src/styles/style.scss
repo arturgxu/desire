@@ -1,0 +1,149 @@
+*,*::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input, textarea {
+    font: inherit;
+}
+
+body {
+    background-color: rgb(253, 251, 247); 
+    min-height: 100vh;              
+}
+
+button {
+    background-color: rgb(250, 215, 155, 1);
+    box-shadow: 0px 0px 2px 1px #bebdbd;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: rgb(235, 235, 235);
+    }
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 0px 1px 3px 0.5px #bebdbd;
+    margin-bottom: 32px;
+
+    span {
+        font-size: 20px;
+    }
+    
+    .change_language {
+        width: 150px;
+    }
+
+}
+
+.header_left {
+    span{
+        text-transform: uppercase;
+        font-weight: bold;
+        transform: skew(-20deg, 0deg);
+        letter-spacing: 3px;
+        display: inline-block;
+    }
+}
+
+main {
+    max-width: 800px;
+    padding: 18px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.form-container {
+    $space:40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $space;
+    margin-bottom: $space;
+    align-items: center;
+    min-width: 150px;
+
+    .description {
+        font-size: 22px;
+        width: 100%;
+        text-indent: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255 248 232 / 50%);
+        padding: 16px;
+        box-shadow: 0px 0px 6px 0px #bebdbd;
+        border-radius: 12px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        box-shadow: 0px 0px 10px 0px #bebdbd;
+        padding: 60px;
+        border-radius: 10px;
+        width: 100%;
+        background-image: url("../../public/images/background.webp");
+        background-repeat: no-repeat;
+        background-size: cover;     
+        background-position: center;
+          
+        
+        .name_container, .desire_container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            word-break: break-all;
+        }
+
+        input, textarea {
+            height: 36px;
+            outline: none;
+            border: 1px solid rgb(210, 210, 210);
+            border-radius: 6px;
+            padding: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+            overflow: auto;
+            max-height: 400px;
+            height: inherit;
+        }
+
+        &_submit {
+            margin: 0 0 0 auto;
+        }
+
+    }
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px #bebdbd;
+    border-radius: 10px;
+}
