@@ -1,4 +1,6 @@
 from fastapi import FastAPI
 app = FastAPI()
 
-code = 1
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
