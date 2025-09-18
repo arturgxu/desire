@@ -14,7 +14,6 @@ class FeelingOut(BaseModel):
 
 
 class DeleteResponse(BaseModel):
-    status: str
     id: int
 
 

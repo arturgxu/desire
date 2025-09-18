@@ -17,13 +17,15 @@ export default function form(name_input, desire_input) {
 
 async function request_to_back(name, desire) {
     try {
-      const response = await fetch("/submit", {
+      const response = await fetch("http://127.0.0.1:8000/add_feeling", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ name, desire }),
       });
+
+      console.log(response);
 
       if (true) {
         const main = document.querySelector("main");
