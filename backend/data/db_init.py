@@ -14,7 +14,7 @@ def init_db() -> None:
             CREATE TABLE IF NOT EXISTS feelings (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT NOT NULL,
-                desire TEXT NOT NULL,
+                desire TEXT NOT NULL
             )
             """
         )
@@ -45,7 +45,7 @@ def insert_feeling(name: str, desire: str) -> int:
 def get_all_feelings() -> List[Dict[str, Any]]:
     with _get_connection() as conn:
         cur = conn.cursor()
-        cur.execute("SELECT id, name, desire, created_at FROM feelings")
+        cur.execute("SELECT id, name, desire FROM feelings")
         rows = cur.fetchall()
         return [dict(row) for row in rows]
 
@@ -59,7 +59,7 @@ def find_by_first_name(first_name: str) -> List[Dict[str, Any]]:
 
     with _get_connection() as conn:
         cur = conn.cursor()
-        cur.execute("SELECT id, name, desire, FROM feelings WHERE LOWER(name) LIKE LOWER(?)", (pattern,))
+        cur.execute("SELECT id, name, desire FROM feelings WHERE LOWER(name) LIKE LOWER(?)", (pattern,))
         rows = cur.fetchall()
         return [dict(row) for row in rows]
 
